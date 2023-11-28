@@ -15,7 +15,7 @@ function login() {
     <tr>
     <td id="table"  width={400} height={400}>
     <div>
-    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+    <img src="logo.jpg"
                 style={{width: '185px'}} alt="logo" />
                 <h1 class="mt-1 mb-5 pb-1"><b>GoWell</b></h1>
                 <h5>Go Healthier</h5>
