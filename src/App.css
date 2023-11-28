@@ -4,9 +4,10 @@
 .b{
   text-align: center;
 }
-table{
- 
-  margin-top: 2cm;
-  margin-left: 8cm;
-  background-image: linear-gradient(to right, rgba(108, 189, 205, 0.5), rgb(255, 1, 213));
+.v{
+  text-align: center;
+}
+.c{
+  text-align: center;
+  margin-left: 220px;
 }

@@ -1,33 +1,35 @@
+
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import IconButton from '@mui/material/IconButton';
-import Input from '@mui/material/Input';
-import FilledInput from '@mui/material/FilledInput';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
-import FormHelperText from '@mui/material/FormHelperText';
-import FormControl from '@mui/material/FormControl';
-
-import Visibility from '@mui/icons-material/Visibility';
-import VisibilityOff from '@mui/icons-material/VisibilityOff';
-export default function BasicTextFields() {
-    const [showPassword, setShowPassword] = React.useState(false);
-
-    const handleClickShowPassword = () => setShowPassword((show) => !show);
-  
-    const handleMouseDownPassword = (event) => {
-      event.preventDefault();
-    };
-  return (
+import { AppBar, Toolbar, Typography, Grid, Card, CardContent, Button } from 
+'@mui/material';
+import { CenterFocusStrong } from '@mui/icons-material';
+function MyForm() {
+ const contacts = [
+ 
+ { name: 'Jane Doe', email: 'janedoe@example.com' },
+ // Add more contacts here
+ ];
+ return (
+ <div>
+ <AppBar position="static">
+ 
+ </AppBar>
+ <Grid container spacing={2} style={{ padding: 20 }}>
+ {contacts.map((contact, index) => (
+ <Grid item xs={12} sm={6} md={4} key={index}>
+ <Card className='c' style={{  height: '100%',  width: '200%'}}>
+ <CardContent>
+ <h2 className='v'>REGISTRATION FORM</h2>
+ <div>
+    <div class="b">
     
-     <div>
-     <table border = "2" width={700} height={300}>
-     <div class="b">
-      <h2>REGISTRATION FORM</h2>
-     </div>
-     <div class = "a">
+    </div>
+    <div class = "a">
+   
+   
+    
     <Box
       component="form"
       sx={{
@@ -38,51 +40,54 @@ export default function BasicTextFields() {
     >
       <TextField  required
       id="outlined-required"
+      type="text"
       label="Required"
       defaultValue="First Name" />
       <TextField  required
       id="outlined-require"
+      type="text"
       label="Required"
       defaultValue="Last Name" /><br></br>
       <TextField required
       id="outlined-require"
+      type="email"
       label="Required"
-      defaultValue="Email"  />
+      defaultValue="Email"/>
+      <TextField required
+      id="outlined-require"
+      label="Required"
+      defaultValue="Password"/><br></br>
+      <TextField required
+      id="outlined-require"
+      type="number"
+      label="Age"
+      defaultValue="Age"/>
+      <TextField required
+      id="outlined-require"
+      type="text"
+      label="Required"
+      defaultValue="Health Issue"/>
       
         
-      <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
-      <div>
-        
-        
-        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
-          <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
-          <OutlinedInput
-            id="outlined-adornment-password"
-            type={showPassword ? 'text' : 'password'}
-            endAdornment={
-              <InputAdornment position="end">
-                <IconButton
-                  aria-label="toggle password visibility"
-                  onClick={handleClickShowPassword}
-                  onMouseDown={handleMouseDownPassword}
-                  edge="end"
-                >
-                  {showPassword ? <VisibilityOff /> : <Visibility />}
-                </IconButton>
-              </InputAdornment>
-            }
-            label="Password"
-          />
-        </FormControl>
-                   
-              
-      </div>
-    </Box>
+      
     
     </Box>
+   
+    
+   
     </div>
-    </table>
+   
     </div>
     
-  );
+ <Button variant="contained" color="primary" style={{ marginTop: 10 }}>
+ SUBMIT
+ </Button>
+ </CardContent>
+ </Card>
+ </Grid>
+ ))}
+ </Grid>
+ </div>
+ );
 }
+export default MyForm;
