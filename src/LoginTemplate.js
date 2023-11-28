@@ -11,7 +11,9 @@ from 'mdb-react-ui-kit';
 function login() {
   return (
     <div>
-    <table id="table" border="2" width={400} height={600} >
+    <table border="1" >
+    <tr>
+    <td id="table"  width={400} height={400}>
     <div>
     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
                 style={{width: '185px'}} alt="logo" />
@@ -42,16 +44,18 @@ function login() {
               </div>
     </form>
 </div>
+</td>
+<td id="table"  width={400} height={400}>
 <div>
     <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
     <div class="text-white px-3 py-4 p-md-5 mx-md-4">
       <h4 class="mb-4">We are more than just a company</h4>
-      <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="small mb-0">Gowell is a healthcare institution providing patient treatment with specialized health science and auxiliary healthcare staff and medical equipment.
+     Gowell is typically funded by public funding</p>
     </div>
   </div>
  </div>
+ </td></tr>
   </table>
   </div>
  
