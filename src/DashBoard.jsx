@@ -136,15 +136,16 @@ const DashBoard = () => {
       </Box>
       <table width="100px" height="200px">
       <tr>
-      
+      <td>
+     
+      </td>
 <td>
-     <div className='i'>
-      <Card  sx={{ minWidth: 275 }}>
-        <CardContent >
-          <Typography sx={{ fontSize: 30 }} color="text.secondary" gutterBottom>
+      <Card sx={{ minWidth: 275 }}>
+        <CardContent>
+          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
             <Link to="/user" ><button>USER REGISTRATION</button></Link>
           </Typography>
-          <Typography sx={{ fontSize: 30 }} color="text.secondary" background-color gutterBottom>
+          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
             <Link to ="/doctor"><button>DOCTER REGISTRATION</button></Link>
           </Typography>
          
@@ -155,7 +156,7 @@ const DashBoard = () => {
           <Button size="small">Learn More</Button>
         </CardActions>
       </Card>
-      </div>
+      
       </td>
       </tr>
       </table>

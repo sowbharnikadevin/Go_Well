@@ -9,6 +9,8 @@ import {
 }
 from 'mdb-react-ui-kit';
 import { Email } from '@mui/icons-material';
+import "./login.css";
+
 
 function login() {
   return (
