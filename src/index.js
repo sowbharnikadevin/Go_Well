@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import './App.css';
 import Appointment from './Appointment'
+import MyForm from './MyForm'
 import reportWebVitals from './reportWebVitals';
 //import { Dashboard } from '@mui/icons-material';
 import DashBoard from './DashBoard';
@@ -11,8 +12,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-   <DashBoard/>
-   <Appointment/>
+    <Appointment/>
+    <MyForm/>
   </React.StrictMode>
 );
 

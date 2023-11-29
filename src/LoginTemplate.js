@@ -8,6 +8,7 @@ import {
   MDBInput
 }
 from 'mdb-react-ui-kit';
+import { Email } from '@mui/icons-material';
 
 function login() {
   return (
@@ -24,7 +25,7 @@ function login() {
                 <h4>Please login to your account</h4>
     <form id="for">
     <div class="form-outline mb-4">
-                    <input  type="email" id="form2Example11" class="form-control"
+                    <input type="email" id="form2Example11" class="form-control"
                       placeholder="Username" />
                     <label  class="form-label" for="form2Example11"></label>
                   </div>

@@ -3,6 +3,7 @@ import LoginTemplate from './LoginTemplate';
 import DashBoard from './DashBoard';
 import MyForm from './MyForm';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Appointment from './Appointment';
 
 const App = () => {
   return (
