@@ -2,16 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import LoginTemplate from './LoginTemplate';
-import MyForm from './MyForm';
+import './App.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-   <LoginTemplate/>
-    <MyForm/>
+   
   </React.StrictMode>
 );
 
