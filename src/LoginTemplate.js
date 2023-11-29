@@ -24,9 +24,9 @@ function login() {
                 <h4>Please login to your account</h4>
     <form id="for">
     <div class="form-outline mb-4">
-                    <input type="email" id="form2Example11" class="form-control"
+                    <input  type="email" id="form2Example11" class="form-control"
                       placeholder="Username" />
-                    <label class="form-label" for="form2Example11"></label>
+                    <label  class="form-label" for="form2Example11"></label>
                   </div>
                   <br></br>
                   <div class="form-outline mb-4">
@@ -38,11 +38,11 @@ function login() {
                   <Link to="form"><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
                     in</button></Link>
                     <br></br>
-                  <a class="text-muted" href="#!">Forgot password?</a>
+                  <a class="text-muted" href="#!"><h4>Forgot password?</h4></a>
                 </div>
                 <div class="d-flex align-items-center justify-content-center pb-4">
-                <p class="mb-0 me-2">Don't have an account?</p>
-                <button type="button" class="btn btn-outline-danger">Create new</button>
+                <p class="mb-0 me-2"><h3>Don't have an account?</h3></p>
+                <button type="button"  class="btn btn-outline-danger">Create new</button>
               </div>
     </form>
 </div>
