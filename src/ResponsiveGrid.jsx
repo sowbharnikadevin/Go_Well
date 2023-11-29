@@ -9,7 +9,7 @@ export default function ResponsiveGrid() {
   return (
     <div className='black'>
     <div>
-    <div className='cat'>
+    <div className='temp'>
     <h1>Categories</h1>
     </div>
     <table >

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import { AppBar, Box, Toolbar, Typography, IconButton, Switch, FormControlLabel, MenuItem, Menu, Button, Card, CardContent, CardActions } from '@mui/material';
@@ -14,7 +15,7 @@ import Drawer from '@mui/material/Drawer';
 
 const drawerWidth = 240;
 
-const Dashboard = () => {
+const DashBoard = () => {
   const [auth, setAuth] = useState(true);
   const [anchorEl, setAnchorEl] = useState(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -123,7 +124,8 @@ const Dashboard = () => {
                     <Link to="/category">{index === 1 && <InfoIcon />}</Link>
                     {index === 2 && <ContactMailIcon />}
                   </ListItemIcon>
-                  <ListItemText primary={text} />
+                  {index === 1 && <Link to="/category"><ListItemText primary={text} /></Link>}
+                  
                 </ListItem>
               ))}
             </List>
@@ -159,4 +161,9 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+
+
+export default DashBoard;
+
+
+

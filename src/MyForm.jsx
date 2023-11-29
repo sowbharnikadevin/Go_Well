@@ -1,6 +1,7 @@
 
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import {Link} from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import { AppBar, Toolbar, Typography, Grid, Card, CardContent, Button } from 
 '@mui/material';
@@ -11,6 +12,12 @@ function MyForm() {
  { name: 'Jane Doe', email: 'janedoe@example.com' },
  // Add more contacts here
  ];
+ const GenderInputSelect = (props) =>
+  <select {...props}>
+    <option>Select gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
  return (
  <div>
  <AppBar position="static">
@@ -59,14 +66,35 @@ function MyForm() {
       defaultValue="Password"/><br></br>
       <TextField required
       id="outlined-require"
+      label="Required"
+      defaultValue="Address"/>
+
+      <TextField required
+      id="outlined-require"
       type="number"
       label="Age"
-      defaultValue="Age"/>
+      defaultValue="Age"/><br></br>
+      <TextField required
+      id="outlined-require"
+      type="date"
+      label=""
+      defaultValue="BOD"/>
+
       <TextField required
       id="outlined-require"
       type="text"
       label="Required"
-      defaultValue="Health Issue"/>
+      defaultValue="Health Issue"/><br></br>
+      <TextField required
+      id="outlined-require"
+      label="Required"
+    
+      type="number" size="10"
+      defaultValue="Contact"/>
+      <TextField required
+     
+      label="Required"
+      defaultValue="Gender"/>
       
         
       
@@ -79,9 +107,9 @@ function MyForm() {
    
     </div>
     
- <Button variant="contained" color="primary" style={{ marginTop: 10 }}>
- SUBMIT
- </Button>
+ <Link to="/cont"><Button variant="contained" color="primary" style={{ marginTop: 10 }}>
+ CONTINUE
+ </Button></Link>
  </CardContent>
  </Card>
  </Grid>

@@ -15,6 +15,7 @@ const App = () => {
         <Route path='/user' element={<MyForm/>}></Route>
         <Route path='/doctor' element={<Appointment/>}></Route>
         <Route path='/category' element={<ResponsiveGrid/>}></Route>
+        <Route path='/cont' element={<ResponsiveGrid/>}></Route>
     </Routes>
    
     
