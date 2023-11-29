@@ -12,6 +12,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import Drawer from '@mui/material/Drawer';
+import "./Dashboard.css";
 
 const drawerWidth = 240;
 
@@ -43,7 +44,7 @@ const DashBoard = () => {
   const bull = <span sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}>•</span>;
 
   return (
-    <div>
+    <div className='container'>
       <Box sx={{ flexGrow: 1 }}>
         <AppBar sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
           <Toolbar>
@@ -59,7 +60,7 @@ const DashBoard = () => {
             </IconButton>
 
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Photos
+              HEALTHCARE APPOINTMENT
             </Typography>
             <FormControlLabel
               control={
@@ -117,6 +118,7 @@ const DashBoard = () => {
           <Toolbar />
           <Box sx={{ overflow: 'auto' }}>
             <List>
+            
               {['Home', 'Category', 'Contact no'].map((text, index) => (
                 <ListItem button key={index} onClick={closeDrawer}>
                   <ListItemIcon>
@@ -134,16 +136,15 @@ const DashBoard = () => {
       </Box>
       <table width="100px" height="200px">
       <tr>
-      <td>
-      <img  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQluFuRGXHJIj-1I86QlMnaTInEhNQlP5HnnxSJjZbEIUHcvc1ZW5IYGkAv3IODGkMl914&usqp=CAU'/>
-      </td>
+      
 <td>
-      <Card sx={{ minWidth: 275 }}>
-        <CardContent>
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+     <div className='i'>
+      <Card  sx={{ minWidth: 275 }}>
+        <CardContent >
+          <Typography sx={{ fontSize: 30 }} color="text.secondary" gutterBottom>
             <Link to="/user" ><button>USER REGISTRATION</button></Link>
           </Typography>
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          <Typography sx={{ fontSize: 30 }} color="text.secondary" background-color gutterBottom>
             <Link to ="/doctor"><button>DOCTER REGISTRATION</button></Link>
           </Typography>
          
@@ -154,6 +155,7 @@ const DashBoard = () => {
           <Button size="small">Learn More</Button>
         </CardActions>
       </Card>
+      </div>
       </td>
       </tr>
       </table>
