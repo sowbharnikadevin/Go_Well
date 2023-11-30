@@ -3,6 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import './category.css';
 export default function ResponsiveGrid() {
@@ -12,7 +13,7 @@ export default function ResponsiveGrid() {
     <div className='temp'>
     <h1>Categories</h1>
     </div>
-    <table >
+    <table className='rita'>
     <tr>
     <td>
     <Card sx={{ maxWidth: 345 }} className='card'>
@@ -34,9 +35,9 @@ export default function ResponsiveGrid() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Link to="/cardio"><Button size="small" color="primary">
           Doctor's available
-        </Button>
+        </Button></Link>
       </CardActions>
     </Card>
     </td>

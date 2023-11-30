@@ -1,6 +1,7 @@
 import React from 'react';
 import LoginTemplate from './LoginTemplate';
 import DashBoard from './DashBoard';
+import Cardio from './Cardio';
 import MyForm from './MyForm';
 import ResponsiveGrid from './ResponsiveGrid';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/doctor' element={<Appointment/>}></Route>
         <Route path='/category' element={<ResponsiveGrid/>}></Route>
         <Route path='/cont' element={<ResponsiveGrid/>}></Route>
+        <Route path='/cardio' element={<Cardio/>}></Route>
     </Routes>
    
     

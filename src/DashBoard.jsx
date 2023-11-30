@@ -142,18 +142,18 @@ const DashBoard = () => {
 <td>
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-            <Link to="/user" ><button>USER REGISTRATION</button></Link>
+          <Typography sx={{ fontSize: 30 }} color="text.secondary" gutterBottom>
+            <Link to="/user" ><button className='b1'>PATIENT LOGIN</button></Link>
           </Typography>
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-            <Link to ="/doctor"><button>DOCTER REGISTRATION</button></Link>
+          <Typography sx={{ fontSize: 30 }} color="text.secondary" gutterBottom>
+            <Link to ="/doctor"><button className='b2'>ADMIN LOGIN</button></Link>
           </Typography>
          
           
           
         </CardContent>
         <CardActions>
-          <Button size="small">Learn More</Button>
+          <Button size="medium">Learn More</Button>
         </CardActions>
       </Card>
       

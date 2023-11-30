@@ -38,7 +38,7 @@ function login() {
                 </div>
 <br></br>
                 <div class="text-center pt-1 mb-5 pb-1">
-                  <Link to="form"><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
+                  <Link to="form"><button className='su1' class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
                     in</button></Link>
                     <br></br>
                   <a class="text-muted" href="#!"><h4>Forgot password?</h4></a>

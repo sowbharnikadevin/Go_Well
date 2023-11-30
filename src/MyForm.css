@@ -1,18 +1,37 @@
 .a{
-    text-align: center;
-    background: 'linear-gradient(rgb(255, 38, 142) 0%, rgb(255, 105, 79) 100%)'
-  }
-  .b{
-    text-align: center;
-    background: 'linear-gradient(rgb(255, 38, 142) 0%, rgb(255, 105, 79) 100%)'
-  }
-  .v{
-    text-align: center;
-    background: 'linear-gradient(rgb(255, 38, 142) 0%, rgb(255, 105, 79) 100%)'
-  }
-  .c{
-    text-align: center;
-    margin-left: 220px;
+  text-align: center;
+  background: 'linear-gradient(rgb(255, 38, 142) 0%, rgb(255, 105, 79) 100%)';
+ 
+}
+.b{
+  text-align: center;
+  background: 'linear-gradient(rgb(255, 38, 142) 0%, rgb(255, 105, 79) 100%)';
+ 
+}
+.v{
+  text-align: center;
+  background: 'linear-gradient(rgb(255, 38, 142) 0%, rgb(255, 105, 79) 100%)';
   
-  }
+}
+.c{
+  text-align: center;
+
+ 
+ 
+}
+.ji{
+  background-image: url("https://tse4.mm.bing.net/th?id=OIP.hkHq_yFKvdbSjLWxeqxqLAHaF7&pid=Api&P=0&h=180");
   
+  height: 900px;
+  background-size:cover;
+  background-repeat: initial;
+}
+#doc{
+  margin-top: 10%;
+  background-image: url("https://tse4.mm.bing.net/th?id=OIP.hkHq_yFKvdbSjLWxeqxqLAHaF7&pid=Api&P=0&h=180");
+  background-size: cover;
+  width: 130%;
+  height: 90%;
+  margin-left: 80%;
+ 
+}

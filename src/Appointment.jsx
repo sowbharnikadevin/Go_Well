@@ -3,7 +3,9 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { AppBar, Grid, Card, CardContent, Button } from '@mui/material';
 
-
+function handleClick (){
+  alert('Submitted Successfully!!!');
+}
 function Appointment() {
   const contacts = [
     { name: 'Jane Doe', email: 'janedoe@example.com' },
@@ -16,7 +18,7 @@ function Appointment() {
       <Grid container spacing={2} style={{ padding: 20 }}>
         {contacts.map((contact, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card className="c" style={{ height: '100%', width: '200%' }}>
+            <Card className="c" style={{ height: '100%', width: '200%' }} id="doc">
               <CardContent>
                 <h2 className="v">Doctor FORM</h2>
                 <div>
@@ -59,6 +61,21 @@ function Appointment() {
                         defaultValue="Password"
                       />
                       <br></br>
+                    
+                      <TextField
+                        required
+                        id="outlined-require-age"
+                       
+                        label="requird"
+                        defaultValue="WorkingTime start"
+                      />
+                      <TextField
+                        required
+                        id="outlined-require-age"
+                       
+                        label="required"
+                        defaultValue="WorkingTime end"
+                      /><br></br>
                       <TextField
                         required
                         id="outlined-require-age"
@@ -66,13 +83,22 @@ function Appointment() {
                         label="Age"
                         defaultValue="Age"
                       />
-                      <TextField
-                        required
-                        id="outlined-require-specialist"
-                        type="text"
-                        label="Required"
-                        defaultValue="Specialist"
-                      />
+                      <TextField required
+                      id="outlined-require"
+                      label="Phone Number"
+                      
+                      size="10"
+                      defaultValue="+91"/>
+                      <br></br>
+                     
+                      <label for="disease">Specialist:</label><br></br>
+      <select name="cars" >
+      <option value="volvo">CARDIOLOGY</option>
+      <option value="saab">DIABETES</option>
+      <option value="mercedes">GYNAECOLOGY</option>
+      <option value="audi">ENT</option>
+      <option value="audi">DERMOTOLOGY</option>
+      <option value="audi">CANCER</option></select>
                     </Box>
                   </div>
                 </div>
@@ -80,6 +106,7 @@ function Appointment() {
                   variant="contained"
                   color="primary"
                   style={{ marginTop: 10 }}
+                  onClick={handleClick}
                 >
                   SUBMIT
                 </Button>

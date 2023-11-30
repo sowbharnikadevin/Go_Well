@@ -10,5 +10,17 @@
     align-items: center;
     
   }
+  .b1{
+    height: 70px;
+   width: 300px;
+   background-color: skyblue;
+    border-radius: 190px;
+  }
+  .b2{
+    height: 70px;
+   width: 300px;
+   background-color: skyblue;
+    border-radius: 190px;
+  }
   
   
