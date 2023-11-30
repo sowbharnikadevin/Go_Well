@@ -1,0 +1,16 @@
+.mn{
+    margin-left: 400px;
+   
+    }
+    .qq{
+        color: red;
+      }
+      .pink{
+        height: 50px;
+        background-color: rgb(249, 178, 202);
+        border-radius: 200px;
+      }
+      .jk{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmdt2tO2Gqm6F1_4tJPkeJ0DpOBeu02z3CBg&usqp=CAU'); 
+        background-size: cover;
+      }

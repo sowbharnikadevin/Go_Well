@@ -1,14 +1,14 @@
 .container {
    
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwhswcJauEoMj30L7155p--iytnA1na3kHxA&usqp=CAU'); 
+    background-image: url('https://www.gptx.org/files/sharedassets/public/v/1/home-page/images/news-and-event-pages/stethoscope-with-blocks.jpg?dimension=pageimagefullwidth&w=1140 '); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
-    justify-content: flex-end; 
+    justify-content:center; 
     align-items: center;
-    
+
   }
   .b1{
     height: 70px;
@@ -22,5 +22,4 @@
    background-color: skyblue;
     border-radius: 190px;
   }
-  
   

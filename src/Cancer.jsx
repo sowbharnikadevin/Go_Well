@@ -18,7 +18,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Icon from '@mui/material/Icon';
 import MdPhone from '@mui/icons-material/Phone';
 import Chip from '@mui/material/Chip';
-import "./cardio.css";
+import "./cancer.css";
 const theme = createTheme();
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -42,22 +42,23 @@ export default function Cardio() {
   }
 
   return (
+    <div className='jk'>
     <div className='mn'>
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            S
+            J
           </Avatar>
         }
        
-        title="Dr.Sharmila"
+        title="Dr.Jayalakshmi"
         subheader="December 01, 2023"
       />
       <CardMedia
         component="img"
         height="350"
-        image="https://plus.unsplash.com/premium_photo-1673953510158-174d4060db8b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNhbCUyMGRvY3RvcnxlbnwwfHwwfHx8MA%3D%3D"
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjSeZR2-2M1R9PWZwev5V_lo72i2r-Py7iQ&usqp=CAU"
         alt="Dr.Sharmila"
       />
       <CardContent>
@@ -89,11 +90,11 @@ export default function Cardio() {
         <CardContent>
           <Typography ><b>DOCTOR BIO:</b></Typography>
           <Typography paragraph>
-        <b> DEGREE:</b> MD (Doctor of Medicine) in cardiology or MS (Master of Surgery) in cardiology or more specifically in cardiothoracic surgery.
+        <b> DEGREE:</b>  B.Sc., D.M., Diploma, M.Ch., M.D., M.Phil., M.Sc.
           </Typography>
           
           <Typography >
-         <b>Heart-healthy diet:</b>
+         <b>Cancer-healthy diet:</b>
           </Typography>
           <Typography paragraph>
  Control your portion size. ...
@@ -109,6 +110,7 @@ Allow yourself an occasional treat.
         </CardContent>
       </Collapse>
     </Card>
+    </div>
     </div>
   );
 }

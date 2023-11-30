@@ -18,7 +18,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Icon from '@mui/material/Icon';
 import MdPhone from '@mui/icons-material/Phone';
 import Chip from '@mui/material/Chip';
-import "./cardio.css";
+import "./gynaecology.css";
 const theme = createTheme();
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -47,17 +47,17 @@ export default function Cardio() {
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            S
+            A
           </Avatar>
         }
        
-        title="Dr.Sharmila"
+        title="Dr.Andrea"
         subheader="December 01, 2023"
       />
       <CardMedia
         component="img"
         height="350"
-        image="https://plus.unsplash.com/premium_photo-1673953510158-174d4060db8b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNhbCUyMGRvY3RvcnxlbnwwfHwwfHx8MA%3D%3D"
+        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0KjzAr4Yout20Pf5xyGWqqpyIr7bIT0BLJw&usqp=CAU"
         alt="Dr.Sharmila"
       />
       <CardContent>
@@ -89,11 +89,11 @@ export default function Cardio() {
         <CardContent>
           <Typography ><b>DOCTOR BIO:</b></Typography>
           <Typography paragraph>
-        <b> DEGREE:</b> MD (Doctor of Medicine) in cardiology or MS (Master of Surgery) in cardiology or more specifically in cardiothoracic surgery.
+        <b> DEGREE:</b> Diploma in Gynaecology & Obstetrics (D. G. O.). Doctor of Medicine (MD) in Gynaecology & Obstetrics. Master of Surgery (MS) in Gynaecology & Obstetrics.
           </Typography>
           
           <Typography >
-         <b>Heart-healthy diet:</b>
+         <b>Healthy diet:</b>
           </Typography>
           <Typography paragraph>
  Control your portion size. ...

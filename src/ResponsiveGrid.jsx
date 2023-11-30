@@ -61,9 +61,9 @@ export default function ResponsiveGrid() {
       </CardContent>
     </CardActionArea>
     <CardActions>
-      <Button size="small" color="primary">
-        Doctor's available
-      </Button>
+    <Link to="/diabetes"><Button size="small" color="primary">
+    Doctor's available
+  </Button></Link>
     </CardActions>
   </Card>
   </td>
@@ -87,9 +87,9 @@ export default function ResponsiveGrid() {
       </CardContent>
     </CardActionArea>
     <CardActions>
-      <Button size="small" color="primary">
-        Doctor's available
-      </Button>
+    <Link to="/gynaecology"><Button size="small" color="primary">
+    Doctor's available
+  </Button></Link>
     </CardActions>
   </Card>
   </td>
@@ -115,9 +115,9 @@ export default function ResponsiveGrid() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Doctor's available
-        </Button>
+      <Link to="/ent"><Button size="small" color="primary">
+      Doctor's available
+    </Button></Link>
       </CardActions>
     </Card>
     </td>
@@ -141,9 +141,9 @@ export default function ResponsiveGrid() {
       </CardContent>
     </CardActionArea>
     <CardActions>
-      <Button size="small" color="primary">
-        Doctor's available
-      </Button>
+    <Link to="/dermo"><Button size="small" color="primary">
+    Doctor's available
+  </Button></Link>
     </CardActions>
   </Card>
   </td>
@@ -167,9 +167,9 @@ export default function ResponsiveGrid() {
       </CardContent>
     </CardActionArea>
     <CardActions>
-      <Button size="small" color="primary">
-        Doctor's available
-      </Button>
+    <Link to="/cancer"><Button size="small" color="primary">
+    Doctor's available
+  </Button></Link>
     </CardActions>
   </Card>
   </td>

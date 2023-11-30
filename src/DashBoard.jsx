@@ -139,7 +139,7 @@ const DashBoard = () => {
       <td>
      
       </td>
-<td>
+<td >
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
           <Typography sx={{ fontSize: 30 }} color="text.secondary" gutterBottom>

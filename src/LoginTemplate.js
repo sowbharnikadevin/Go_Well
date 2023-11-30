@@ -1,18 +1,48 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import {
-  MDBBtn,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBInput
-}
-from 'mdb-react-ui-kit';
+import React, { useState, useEffect, useContext } from 'react';
+
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { UserContext } from './UserContext'; // Import UserContext
 import { Email } from '@mui/icons-material';
 import "./login.css";
 
 
-function login() {
+import { TextField } from '@mui/material';
+
+
+function LoginTemplate() {
+  const navigate = useNavigate();
+  const [users, setUsers] = useState([]);
+  const [loginDetails, setLoginDetails] = useState({
+    username: '',
+    password: ''
+  });
+  const { setUser } = useContext(UserContext);
+
+  useEffect(() => {
+    axios.get('https://6564372dceac41c0761da07b.mockapi.io/api/v1/posts')
+      .then(response => setUsers(response.data))
+      .catch(error => console.error('Error:', error));
+  }, []);
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const foundUsers = users.filter(user => user.username === loginDetails.username);
+    
+    // console.log(foundUsers);
+
+    if (foundUsers.length > 0) {
+      setUser(foundUsers[0]);
+      navigate('/form')
+    } else {
+      alert('Account not found please register')
+      navigate('/co')
+    }
+  };
+
+  const handleInputChange = (e) => {
+    setLoginDetails({ ...loginDetails, [e.target.name]: e.target.value });
+  };
   return (
     <div id="ta" >
     <table border="1" >
@@ -25,15 +55,24 @@ function login() {
                 <h1 class="mt-1 mb-5 pb-1"><b>GoWell</b></h1>
                 <h3>Go Healthier</h3>
                 <h4>Please login to your account</h4>
-    <form id="for">
+    <form id="for" onSubmit={handleLogin}>
     <div class="form-outline mb-4">
-                    <input type="email" id="form2Example11" class="form-control"
-                      placeholder="Username" />
-                    <label  class="form-label" for="form2Example11"></label>
+    <lable>
+                    <input type="email" name="username" id="form2Example11" className="form-control"
+                      placeholder="Username"
+                      label="Required"
+                      value={loginDetails.username}
+                      onChange={handleInputChange}/>
+                      </lable>
                   </div>
                   <br></br>
                   <div class="form-outline mb-4">
-                  <input type="password" id="form2Example22" class="form-control" placeholder="Password"/>
+                  <lable>
+                  <input type="password" name="password" id="form2Example11" className="form-control"
+                  placeholder="Password"  value={loginDetails.password}
+                  onChange={handleInputChange}
+                  label="Required"/>
+                  </lable>
                   <label class="form-label" for="form2Example22"></label>
                 </div>
 <br></br>
@@ -41,11 +80,11 @@ function login() {
                   <Link to="form"><button className='su1' class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
                     in</button></Link>
                     <br></br>
-                  <a class="text-muted" href="#!"><h4>Forgot password?</h4></a>
+                  
                 </div>
                 <div class="d-flex align-items-center justify-content-center pb-4">
                 <p class="mb-0 me-2"><h3>Don't have an account?</h3></p>
-                <button type="button"  class="btn btn-outline-danger">Create new</button>
+                <Link to="/co"><button type="button"  class="btn btn-outline-danger">Create new</button></Link>
               </div>
     </form>
 </div>
@@ -55,16 +94,6 @@ function login() {
 
 );
 }
-// </td>
-// <td id="table"  width={400} height={400}>
-// <div>
-//     <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
-//     <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-//       <h4 class="mb-4">We are more than just a company</h4>
-//       <p class="small mb-0">Gowell is a healthcare institution providing patient treatment with specialized health science and auxiliary healthcare staff and medical equipment.
-//      Gowell is typically funded by public funding</p>
-//     </div>
-//   </div>
-//  </div>
 
-export default login;
+
+export default LoginTemplate;

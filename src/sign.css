@@ -1,0 +1,19 @@
+#sign{
+    background-image: url("https://wallpaperaccess.com/full/293386.jpg");
+    background-image: cover;
+    height: 1000px;
+    width:100%;
+
+}
+#up{
+  
+   margin-top: 20%;
+   margin-left: 40%;
+}
+b{
+    color: antiquewhite;
+}
+#head{
+    margin-left: 50%;
+    color:ghostwhite;
+}
