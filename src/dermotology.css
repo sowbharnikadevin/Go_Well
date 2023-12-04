@@ -1,11 +1,17 @@
 .mn{
-    margin-left: 400px;
+  margin-left: 35%;
+ 
+  }
+  .qq{
+      color: red;
     }
-    .qq{
-        color: red;
-      }
-      .pink{
-        height: 50px;
-        background-color: rgb(249, 178, 202);
-        border-radius: 200px;
-      }
+    .pink{
+      height: 50px;
+      background-color: rgb(249, 178, 202);
+      border-radius: 200px;
+    }
+    .jk{
+      background-image: url('https://t3.ftcdn.net/jpg/05/52/06/54/360_F_552065481_f2v6KugntlxzdMRitcgOh2i5PpiTtFGl.jpg'); 
+      background-size: cover;
+     
+    }

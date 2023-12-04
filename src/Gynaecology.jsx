@@ -42,6 +42,7 @@ export default function Cardio() {
   }
 
   return (
+    <div className='jk'>
     <div className='mn'>
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
@@ -110,5 +111,7 @@ Allow yourself an occasional treat.
       </Collapse>
     </Card>
     </div>
+    </div>
+
   );
 }

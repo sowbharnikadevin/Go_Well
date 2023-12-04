@@ -44,7 +44,7 @@ const DashBoard = () => {
   const bull = <span sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}>•</span>;
 
   return (
-    <div className='container'>
+    <div className='container' >
       <Box sx={{ flexGrow: 1 }}>
         <AppBar sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
           <Toolbar>

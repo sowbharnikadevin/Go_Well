@@ -20,18 +20,19 @@
  
 }
 .ji{
-  background-image: url("https://tse4.mm.bing.net/th?id=OIP.hkHq_yFKvdbSjLWxeqxqLAHaF7&pid=Api&P=0&h=180");
-  
+  background-image: url("https://wallpaperaccess.com/full/293386.jpg");
+ 
   height: 900px;
   background-size:cover;
   background-repeat: initial;
 }
 #doc{
   margin-top: 10%;
-  background-image: url("https://tse4.mm.bing.net/th?id=OIP.hkHq_yFKvdbSjLWxeqxqLAHaF7&pid=Api&P=0&h=180");
+  background-color: transparent;
+  color: aliceblue;
   background-size: cover;
   width: 130%;
   height: 90%;
-  margin-left: 80%;
+  margin-left: 140%;
  
 }

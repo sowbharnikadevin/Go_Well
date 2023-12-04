@@ -56,7 +56,8 @@ export default function ResponsiveGrid() {
           DIABETES
         </Typography>
         <Typography variant="body2" color="text.secondary">
-        Cardiology is a branch of medicine that concerns diseases and disorders of the heart
+       
+Diabetes mellitus, often known as diabetes, is a group of common endocrine diseases.
         </Typography>
       </CardContent>
     </CardActionArea>
@@ -82,7 +83,7 @@ export default function ResponsiveGrid() {
           GYNAECOLOGY
         </Typography>
         <Typography variant="body2" color="text.secondary">
-        Cardiology is a branch of medicine that concerns diseases and disorders of the heart
+        Gynecology is the medical field that focuses on women's reproductive health, from puberty.
         </Typography>
       </CardContent>
     </CardActionArea>
@@ -110,7 +111,7 @@ export default function ResponsiveGrid() {
             ENT
           </Typography>
           <Typography variant="body2" color="text.secondary">
-          Cardiology is a branch of medicine that concerns diseases and disorders of the heart
+          ENT specialists treat hearing, swallowing and speech, breathing and sleep issues, allergies.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -136,7 +137,7 @@ export default function ResponsiveGrid() {
           DERMOTOLOGY
         </Typography>
         <Typography variant="body2" color="text.secondary">
-        Cardiology is a branch of medicine that concerns diseases and disorders of the heart
+        Dermatology is a medical specialty that deals with the skin, hair, nails, and membranes
         </Typography>
       </CardContent>
     </CardActionArea>
@@ -162,7 +163,7 @@ export default function ResponsiveGrid() {
           CANCER
         </Typography>
         <Typography variant="body2" color="text.secondary">
-        Cardiology is a branch of medicine that concerns diseases and disorders of the heart
+        Cancer is a disease in which some of the body's cells grow uncontrollably.
         </Typography>
       </CardContent>
     </CardActionArea>

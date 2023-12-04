@@ -13,14 +13,14 @@ function Appointment() {
   ];
 
   return (
-    <div>
+    <div className="ji">
       <AppBar position="static"></AppBar>
       <Grid container spacing={2} style={{ padding: 20 }}>
         {contacts.map((contact, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <Card className="c" style={{ height: '100%', width: '200%' }} id="doc">
               <CardContent>
-                <h2 className="v">Doctor FORM</h2>
+                <h2 className="v">DOCTOR FORM</h2>
                 <div>
                   <div className="b"></div>
                   <div className="a">
