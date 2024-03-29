@@ -145,9 +145,7 @@ const DashBoard = () => {
           <Typography sx={{ fontSize: 30 }} color="text.secondary" gutterBottom>
             <Link to="/user" ><button className='b1'>PATIENT LOGIN</button></Link>
           </Typography>
-          <Typography sx={{ fontSize: 30 }} color="text.secondary" gutterBottom>
-            <Link to ="/doctor"><button className='b2'>ADMIN LOGIN</button></Link>
-          </Typography>
+         
          
           
           

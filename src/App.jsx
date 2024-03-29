@@ -11,7 +11,7 @@ import Cancer from './Cancer';
 import MyForm from './MyForm';
 import ResponsiveGrid from './ResponsiveGrid';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Appointment from './Appointment';
+
 import Signupform from './Signupform';
 import { UserProvider } from './UserContext';
 
@@ -25,7 +25,7 @@ const App = () => {
         <Route path='/' element={<LoginTemplate/>}></Route>
         <Route path='/form' element={<DashBoard/>}></Route>
         <Route path='/user' element={<MyForm/>}></Route>
-        <Route path='/doctor' element={<Appointment/>}></Route>
+        
         <Route path='/category' element={<ResponsiveGrid/>}></Route>
         <Route path='/cont' element={<ResponsiveGrid/>}></Route>
         <Route path='/cardio' element={<Cardio/>}></Route>

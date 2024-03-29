@@ -21,7 +21,7 @@ const Signupform = () => {
    const { setUser } = useContext(UserContext); 
 
   const checkUserExists = async (username) => {
-      const response = await axios.get('https://6564372dceac41c0761da07b.mockapi.io/api/v1/posts');
+      const response = await axios.get('http://localhost:5000/view');
       return response.data.some(user => user.username === username);
   };
 
@@ -39,7 +39,7 @@ const Signupform = () => {
       return;
     }
 
-    axios.post('https://6564372dceac41c0761da07b.mockapi.io/api/v1/posts', signupDetails)
+    axios.post('http://localhost:5000/insert', signupDetails)
       .then(response => {
         console.log('Signup successful:', response.data);
         setUser(response.data);
